@@ -36,7 +36,7 @@ class _ReportsScreenState extends State<ReportsScreen> {
     final total=entries.fold<double>(0,(s,e)=>s+e.value);
     return Scaffold(
       appBar: AppBar(title: Text('Relatórios • ${DateFormat('MMMM yyyy','pt_BR').format(widget.month)}')),
-      body: ListView(padding: const EdgeInsets.fromLTRB(16,8,16,32), children:[
+      body: ListView(padding: const EdgeInsets.fromLTRB(16,8,16,140), children:[
         Row(children:[
           Expanded(child:_summary('Receitas',income,Icons.trending_up)), const SizedBox(width:8),
           Expanded(child:_summary('Despesas',totalExpenses,Icons.trending_down)),
